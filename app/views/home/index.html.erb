@@ -1,0 +1,24 @@
+<style media="screen">
+  .image {
+    width: 100px;
+    height: 100px
+  }
+</style>
+
+<div class="container">
+  <%=  @questions.each do |q| %>
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object image" src="http://thenarcissisticlife.com/wp-content/uploads/2013/08/question.jpg" alt="Helo">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"><%= q.email %></h4>
+        <div><%= time_ago_in_words q.created_at %> ago</div>
+        <p><%= q.body %></p>
+        <a href="<%= question_path(q) %>" class="btn btn-success btn-xs">View Answers</a>
+      </div>
+    </div>
+  <% end %>
+</div>

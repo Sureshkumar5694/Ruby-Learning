@@ -1,0 +1,67 @@
+<style media="screen">
+  .image {
+    width: 100px;
+    height: 100px
+  }
+</style>
+
+<%= render 'home/new_answer' %>
+<div class="container">
+  <div class="lead well">
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object image" src="http://thenarcissisticlife.com/wp-content/uploads/2013/08/question.jpg" alt="Helo">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"><%= @question.email %></h4>
+        <p><%= @question.body %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-md-offset-1">
+
+    <div>
+      <button type="button" name="button" class="btn btn-success btn-md" data-toggle='modal' data-target='#answer-modal' >Submit Answer</button>
+    </div>
+
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object image" src="http://thenarcissisticlife.com/wp-content/uploads/2013/08/question.jpg" alt="Helo">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">User1@gmail.com</h4>
+        <p>What is the Shape of the earth</p>
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object image" src="http://thenarcissisticlife.com/wp-content/uploads/2013/08/question.jpg" alt="Helo">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">User1@gmail.com</h4>
+        <p>What is the Shape of the earth</p>
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object image" src="http://thenarcissisticlife.com/wp-content/uploads/2013/08/question.jpg" alt="Helo">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">User1@gmail.com</h4>
+        <p>What is the Shape of the earth</p>
+      </div>
+    </div>
+
+  </div>
+</div>
